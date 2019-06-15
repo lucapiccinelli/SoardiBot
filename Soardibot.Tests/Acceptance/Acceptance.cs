@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Formatting;
+using System.Text;
 using Microsoft.Owin.Testing;
 using Soardibot.Controllers.Dto.SendMessage;
 using Xunit;
@@ -41,11 +42,11 @@ namespace Soardibot.Tests.Acceptance
         public async void ICan_Send_AMessagge()
         {
             var response = await _testServer.CreateRequest("http://testserver/api/v1/sendmessage")
-                .And(request => request.Content = new ObjectContent<SendMessageDto>(new SendMessageDto()
-                {
-                    Text = "bla",
-                    ToId = 494523457
-                }, new JsonMediaTypeFormatter()))
+                .And(request => request.Content = new StringContent(
+                "{" +
+                    "\"text\":\"bla\"," +
+                    "\"toId\":494523457" +
+                "}", Encoding.UTF8, "application/json"))
                 .PostAsync();
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

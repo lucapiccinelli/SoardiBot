@@ -3,6 +3,6 @@
     public class SendMessageDto
     {
         public string Text { get; set; }
-        public int ToId { get; set; }
+        public long ToId { get; set; }
     }
 }

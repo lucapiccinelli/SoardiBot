@@ -117,3 +117,6 @@ Desktop.ini
 *.db
 _data/positions_dataset/generated*
 .vs
+
+*secrets.json
+*secrets.xml

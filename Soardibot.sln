@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soardibot.Tests", "Soardibo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbcli", "sbcli\sbcli.csproj", "{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoardiBotService", "SoardiBotService\SoardiBotService.csproj", "{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|x86.ActiveCfg = Release|x86
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|x86.Build.0 = Release|x86
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Release|x86.ActiveCfg = Release|x86
+		{F226A38D-3279-4F39-B6AE-9DBB9C5C87DF}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

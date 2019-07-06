@@ -7,6 +7,7 @@ using Soardibot.Controllers.Dto.SendMessage;
 using Soardibot.Dto;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
+using Telegram.Bot.Types.Enums;
 
 namespace Soardibot.Controllers
 {
@@ -33,7 +34,7 @@ namespace Soardibot.Controllers
             _telegramBotClient = new TelegramBotClient(_botClientId);
             try
             {
-                await _telegramBotClient.SendTextMessageAsync(request.ToId, request.Text);
+                await _telegramBotClient.SendTextMessageAsync(request.ToId, request.Text, parseMode: ParseMode.Html);
                 return Ok();
             }
             catch (ApiRequestException ex)

@@ -12,21 +12,35 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Debug|x86.ActiveCfg = Debug|x86
+		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Debug|x86.Build.0 = Debug|x86
 		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Release|x86.ActiveCfg = Release|x86
+		{B09F4AF4-8436-4DC7-ACF3-E97A09DC1177}.Release|x86.Build.0 = Release|x86
 		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Debug|x86.ActiveCfg = Debug|x86
+		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Debug|x86.Build.0 = Debug|x86
 		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Release|x86.ActiveCfg = Release|x86
+		{0FB1A421-7BF1-47FB-A679-B69198132B3F}.Release|x86.Build.0 = Release|x86
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Debug|x86.ActiveCfg = Debug|x86
+		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Debug|x86.Build.0 = Debug|x86
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|x86.ActiveCfg = Release|x86
+		{1C4D6A19-AAA9-4112-9FBB-A7782BD94C0A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

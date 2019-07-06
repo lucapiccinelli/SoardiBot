@@ -27,12 +27,12 @@ namespace Soardibot.Tests.Acceptance
         }
     }
 
-    public class Acceptance : IClassFixture<TestServerFixture>
+    public class SendMessageToTheBotAcceptance : IClassFixture<TestServerFixture>
     {
         private readonly TestServerFixture _testServerFixture;
         private readonly TestServer _testServer;
 
-        public Acceptance(TestServerFixture testServerFixture)
+        public SendMessageToTheBotAcceptance(TestServerFixture testServerFixture)
         {
             _testServerFixture = testServerFixture;
             _testServer = _testServerFixture.TestServer;

@@ -1,6 +1,8 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
+using Soardibot.Controllers;
 using Soardibot.Controllers.Dto.SendMessage;
 using Soardibot.Dto;
 using Telegram.Bot;
@@ -8,6 +10,7 @@ using Telegram.Bot.Exceptions;
 
 namespace Soardibot.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class SendmessageController : ApiController
     {
         private TelegramBotClient _telegramBotClient;

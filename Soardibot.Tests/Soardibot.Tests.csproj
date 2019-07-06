@@ -36,9 +36,37 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BigMath, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TLSharp.0.1.0.390\lib\net45\BigMath.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.9.3\lib\net20\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.ZLib, Version=2.0.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TLSharp.0.1.0.390\lib\net45\Ionic.ZLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=4.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -104,6 +132,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Telegram.Bot, Version=14.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telegram.Bot.14.12.0\lib\net45\Telegram.Bot.dll</HintPath>
+    </Reference>
+    <Reference Include="TeleSharp.TL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TLSharp.0.1.0.390\lib\net45\TeleSharp.TL.dll</HintPath>
+    </Reference>
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
     </Reference>
@@ -118,7 +152,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acceptance\Acceptance.cs" />
+    <Compile Include="Acceptance\SendMessageToTheBotAcceptance.cs" />
+    <Compile Include="Acceptance\TheBotListensForCommands.cs" />
     <Compile Include="Controllers\ControllerHelperTests.cs" />
     <Compile Include="Controllers\SendMessageControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -17,6 +17,7 @@ namespace Soardibot
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.EnableCors();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -40,11 +41,7 @@ namespace Soardibot
         {
             var builder = new ContainerBuilder();
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-
             builder.RegisterInstance(secrets);
-            //builder.RegisterType<Secrets>().As<IHeyExceptionHandler>().InstancePerRequest();
-            //builder.RegisterType<HangfireJobRepository>().As<IJobRepository>().InstancePerLifetimeScope();
-            //builder.RegisterType<HeyService>().As<IHeyService>().InstancePerLifetimeScope();
 
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);

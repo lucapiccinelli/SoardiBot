@@ -53,10 +53,10 @@ namespace Soardibot.Tests.Acceptance
         }
 
         [Fact]
-        public async void OnMalformedInput_ItReturn_BadRequest()
+        public async void OnMalformedInput_ItReturns_BadRequest()
         {
             var response = await _testServer.CreateRequest("http://testserver/api/v1/sendmessage")
-                .And(request => request.Content = new ObjectContent<string>("blaaaaaa", new JsonMediaTypeFormatter()))
+                .And(request => request.Content = new StringContent("blaaaaaa", Encoding.UTF8, "application/json"))
                 .PostAsync();
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
